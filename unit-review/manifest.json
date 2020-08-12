@@ -1,0 +1,36 @@
+{
+
+  "manifest_version": 2,
+  "name": "UnitReview",
+  "version": "0.1",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "content-script-example@mozilla.org",
+      "strict_min_version": "59.0a1"
+    }
+  },
+
+  "description": "Experimental review per commit for gitlab",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+     "32" : "icons/icon.png"
+    },
+    "default_title": "Settings",
+    "default_popup": "popup/content-script.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
